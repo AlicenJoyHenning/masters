@@ -1,8 +1,4 @@
-# This R script investigates the publicly available dataset: 
-
-# GSE161918 for scRNAseq of COVID patients at various time points
-
-# MAIN PROBLEM: timepoint data is from bulk RNA seq, no explicit label for differentiation/ ambiguous 
+# This R script investigates the publicly available dataset GSE161918 for scRNAseq of COVID patients at various time points 
 
 # 1 Obtain the dataset metadata csv ####
 getwd()
