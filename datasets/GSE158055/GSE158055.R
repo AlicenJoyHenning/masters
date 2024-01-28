@@ -11,10 +11,19 @@ GSE158055 <- read_xlsx("masters/datasets/GSE158055/GSE158055_sample_metadata.xls
 
 length(unique(GSE158055$Patients)) # 196 
 
+
+
+Genomics10Xv3 <- subset(GSE158055, GSE158055$`Single cell sequencing platform` == "10X 3'")
+
+Genomics10xv5 <- subset(GSE158055, GSE158055$`Single cell sequencing platform` == "10X 5'" & GSE158055$`BCR single cell sequencing` == "No" & GSE158055$`TCR single cell sequencing` == "No")
+
 PBMC <- subset(GSE158055, GSE158055$`Sample type` == "fresh PBMC")
 length(unique(PBMC$Patients)) # 79
 
-# Assuming PB is your data frame
+PBMC <- subset(PBMC$
+
+
+# 3 Plot some features 
 PB <- subset(PBMC, PBMC$`Sampling day (Days after symptom onset)`!= "control" & PBMC$`Sampling day (Days after symptom onset)`!= "unknown")
 PB$`Sampling day (Days after symptom onset)` <- as.numeric(PB$`Sampling day (Days after symptom onset)`)
 PB <- arrange(PB, PB$`Sampling day (Days after symptom onset)`)
