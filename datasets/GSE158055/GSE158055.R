@@ -6,6 +6,7 @@
 getwd()
 library(readxl)
 GSE158055 <- read_xlsx("masters/datasets/GSE158055/GSE158055_sample_metadata.xlsx")
+write.csv(GSE158055, "C:/Users/alice/CHPC/GSE158055_metadata.csv")
 
 # 2 Count the metadata features ####
 
@@ -20,7 +21,7 @@ Genomics10xv5 <- subset(GSE158055, GSE158055$`Single cell sequencing platform` =
 PBMC <- subset(GSE158055, GSE158055$`Sample type` == "fresh PBMC")
 length(unique(PBMC$Patients)) # 79
 
-PBMC <- subset(PBMC$
+
 
 
 # 3 Plot some features 
