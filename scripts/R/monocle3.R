@@ -8,6 +8,7 @@
 BiocManager::install(c('DelayedArray','DelayedMatrixStats','limma', 'lme4', 'S4Vectors', 
                        'SingleCellExperiment','SummarizedExperiment', 'batchelor', 'HDF5Array',
                        'terra', 'ggrastr', 'devtools')) 
+BiocManager::install("HDF5Array", force = TRUE)
 
 library(batchelor)
 library(DelayedArray)
@@ -16,7 +17,7 @@ library(devtools)
 library(dplyr)
 library(ggrastr)
 library(ggplot2)
-library(HDF5Arrary)
+library(HDF5Array)
 library(limma)
 library(lme4)
 library(S4Vectors)
