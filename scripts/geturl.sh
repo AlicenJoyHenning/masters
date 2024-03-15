@@ -13,6 +13,9 @@ for accession in "${Accession_list[@]}"; do
     ffq "$accession" > "$accession.txt"
     grep "md5\|fastq.gz" "$accession.txt" > "$accession.temp.txt"
     grep -v "null" "$accession.temp.txt" > "$accession.metadata.txt"
+    
+    # Count the number of fastq files in each file
+    grep -c "ftp" "$accession.metadata.txt" >> fastq.count.txt
 
     # Remove temporary file 
     rm "$accession.txt" "$accession.temp.txt"
