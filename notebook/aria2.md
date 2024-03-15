@@ -1,7 +1,7 @@
 # Downloading scRNAseq files 
 14/03/2024 
 
-## Finding sequencing files & assessing file corruption: FFQ 
+## 1. Finding sequencing files & assessing file corruption: FFQ 
 First, to check whether file has downloaded correctly, check the checksum for the file wanting to be downloaded. Checksums often accompany software downloaded from the web so that users can ensure the file or files were not modified in transit. If the checksum from the software vendor matches the checksum of the downloaded installation files on your computer, then no errors or modifications were made. 
 
 Once you have downloaded a file you can compute a hash of it by travelling to that directory. Windows has inbuilt commands to do this (no third-party utilities required): 
@@ -12,7 +12,7 @@ certutil -hashfile [FILENAME] [HASH]
 
 This has been directly applied to sequencing data through FFQ 
 
-> ```ffq``` receives an accession and returns the metadata for that accession as well as the metadata for all downstream accessions following the connections between GEO, SRA, EMBL-EBI, DDBJ, and Biosample. 
+> ```ffq``` receives an accession and returns the metadata for that accession as well as the metadata for all downstream accessions following the connections between GEO (GSE/ GSM), SRA (SRR), EMBL-EBI (ENCSR), DDBJ, and Biosample (SAMN). I plan to use this to download my GEO datasets. 
 
 This requires pip to be installed ```sudo apt install python3-pip```. Then ```pip install ffq``` gave the error: 
 > × This environment is externally managed
@@ -34,9 +34,18 @@ Then ```apt install python3-ffq``` gave error:
 > E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
 > E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
 
-THen ```sudo apt install python3-ffq``` gave the error: 
+Then ```sudo apt install python3-ffq``` gave the error: 
+> Reading package lists... Done
+> Building dependency tree... Done
+> Reading state information... Done
+> Package ffp is not available, but is referred to by another package.
+> This may mean that the package is missing, has been obsoleted, or
+> is only available from another source
 
-## Downloading from online sources: Aria2
-aria2 is a command line tool used to download files from the internet using HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink [more info here](https://aria2.github.io/)
+E: Package 'ffp' has no installation candidate
+
+
+## 2. Downloading from online sources: Aria2
+aria2 is a command line tool used to download files from the internet using HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink [more info here](https://aria2.github.io/) 
 
 
