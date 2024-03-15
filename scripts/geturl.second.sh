@@ -1,10 +1,7 @@
 #!/bin/bash
 
 # Define the list of accession numbers
-Accession_list=("GSM7759620" "GSM7759621" "GSM7759622" "GSM7759623")
-
-touch fastq.count.txt
-echo "accession, fastq_count" > fastq.count.txt
+Accession_list=("GSM7135569" "GSM7135585" "GSM7103257" "GSM7103264" "GSM7103275" "GSM7103276" "GSM7103277" "GSM7103278" "GSM7103317" "GSM7103319" "GSM7103320" "GSM7103327")
 
 # Iterate through the list
 for accession in "${Accession_list[@]}"; do
@@ -18,8 +15,9 @@ for accession in "${Accession_list[@]}"; do
     grep -v "null" "$accession.temp.txt" > "$accession.metadata.txt"
     
     # Count the number of fastq files in each file
-    count=$(grep -c "ftp" "$accession.metadata.txt")
-    echo "$accession, $count" >> fastq.count.txt
+    echo "$accession" > fastq.count.txt
+    echo "," <redirection-command-for-same-line> fastq.count.txt
+    grep -c "ftp" "$accession.metadata.txt" <redirection-command-for-same-line> fastq.count.txt
 
     # Remove temporary file 
     rm "$accession.txt" "$accession.temp.txt"
