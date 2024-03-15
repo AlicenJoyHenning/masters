@@ -42,9 +42,26 @@ Then ```sudo apt install python3-ffq``` gave the error:
 > This may mean that the package is missing, has been obsoleted, or
 > is only available from another source
 
+OUTPUT : 
+                                            
+ "filename": "SRR25918342_1.fastq.gz",
+                                            "md5": "dd6ed54176467493de245658438c8244",
+                                            "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR259/042/SRR25918342/SRR25918342_1.fastq.gz"
+                                            "filename": "SRR25918342_2.fastq.gz",
+                                            "md5": "4202fa10b482de661f240ea91eecc9d6",
+                                            "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR259/042/SRR25918342/SRR25918342_2.fastq.gz"
+                                            "filename": "MC07_S7_I1_001.fastq.gz.1",
+                                            "url": "s3://sra-pub-src-15/SRR25918342/MC07_S7_I1_001.fastq.gz.1"
+                                            "filename": "MC07_S7_I2_001.fastq.gz.1",
+                                            "url": "s3://sra-pub-src-15/SRR25918342/MC07_S7_I2_001.fastq.gz.1"
+                                            "filename": "MC07_S7_R1_001.fastq.gz.1",
+                                            "url": "s3://sra-pub-src-15/SRR25918342/MC07_S7_R1_001.fastq.gz.1"
+                                            "filename": "MC07_S7_R2_001.fastq.gz.1",
+                                            "url": "s3://sra-pub-src-15/SRR25918342/MC07_S7_R2_001.fastq.gz.1"                                         
+
+
 E: Package 'ffp' has no installation candidate
-
-
+                                        
 ## 2. Downloading from online sources: Aria2
 aria2 is a command line tool used to download files from the internet using HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink [more info here](https://aria2.github.io/) 
 
