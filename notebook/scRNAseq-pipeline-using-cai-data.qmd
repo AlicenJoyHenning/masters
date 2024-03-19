@@ -1,0 +1,487 @@
+---
+title: "Running scrnaseq pipeline using alevin and starsolo using the cai datasets"
+execute: 
+ eval: false
+format: gfm
+editor: visual
+---
+
+## **Step 1: Installing tools and dependencies on the chpc**
+
+1.1 Installing micromamba to the chpc
+
+```{Bash}
+
+ssh tpotgieter@dtn.chpc.ac.za #Log into a node that is connected to the internet
+
+cd lustre/t_project/cai_dataset 
+
+mkdir bin 
+
+cd bin 
+
+curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
+
+micromamba activate 
+
+./bin/micromamba shell init -s bash -p ~/micromamba   # this writes to your .bashrc file sourcing the bashrc file incorporates the changes into the running session.
+
+exit 
+
+ssh tpotgieter@dtn.chpc.ac.za  
+
+cd lustre/t_project/cai_dataset 
+
+micromamba activate 
+
+vim ~/.condarc 
+
+ 'i' 
+
+channels: 
+ - conda-forge
+ - bioconda 
+ - defaults 
+ 
+'esc' ':wq' 
+
+
+```
+
+1.2 Install newer version of python - need python to use ffq
+
+```{Bash}
+
+micromamba install python=3.11.5 #see documentation for latest version of python
+
+```
+
+1.3 Install ffq
+
+ffq receives an accession and returns the metadata for that accession as well as the metadata for all downstream accessions following the connections between GEO, SRA, EMBL-EBI, DDBJ, and Biosample. ffq is specifically designed to download metadata and to facilitate obtaining links to sequence files.
+
+```{Bash}
+
+pip install ffq 
+
+```
+
+1.4 Install aria2
+
+Aria2 downloads a single file using either HTTP, HTTPS, or FTP protocol
+
+```{Bash}
+
+micromamba install aria2 
+
+```
+
+## Step 2: installing datasets
+
+2.1 Make sure micromamba is active and that you are still logged into an internet node
+
+```{Bash}
+
+# if micromamba is active there would be (base) before the username if not you should activate micromamba 
+
+micromamba activate
+
+```
+
+2.2 Use ffq to retrieve metadata, specifically the url for the file you want to download
+
+```{Bash}
+
+cd cai_dataset # make sure you are in the directory you want to install the datasets
+
+ffq SRR11038989
+
+# prints out the following 
+
+[2023-09-12 10:33:39,990]    INFO Parsing run SRR11038989
+{
+    "SRR11038989": {
+        "accession": "SRR11038989",
+        "experiment": "SRX7691254",
+        "study": "SRP247583",
+        "sample": "SRS6117416",
+        "title": "HiSeq X Ten paired end sequencing; 10 genomics single-cell RNA-seq of Homo sapiens: TB infection adult male peripheral blood",
+        "attributes": {
+            "ENA-SPOT-COUNT": 280183078,
+            "ENA-BASE-COUNT": 49592404806,
+            "ENA-FIRST-PUBLIC": "2020-03-23",
+            "ENA-LAST-UPDATE": "2020-03-23"
+        },
+        "files": {
+            "ftp": [
+                {
+                    "accession": "SRR11038989",
+                    "filename": "SRR11038989_1.fastq.gz",
+                    "filetype": "fastq",
+                    "filesize": 4815831419,
+                    "filenumber": 1,
+                    "md5": "b6cf6a16a53828c176806976364437bf",
+                    "urltype": "ftp",
+                    "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR110/089/SRR11038989/SRR11038989_1.fastq.gz"
+                },
+                {
+                    "accession": "SRR11038989",
+                    "filename": "SRR11038989_2.fastq.gz",
+                    "filetype": "fastq",
+                    "filesize": 19153232624,
+                    "filenumber": 2,
+                    "md5": "64318dc791ddfbd039356040dac83603",
+                    "urltype": "ftp",
+                    "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR110/089/SRR11038989/SRR11038989_2.fastq.gz"
+                }
+            ],
+            "aws": [
+                {
+                    "accession": "SRR11038989",
+                    "filename": "PBMC_TB_3_R1.fastq.gz.1",
+                    "filetype": "fastq",
+                    "filesize": null,
+                    "filenumber": 1,
+                    "md5": null,
+                    "urltype": "aws",
+                    "url": "s3://sra-pub-src-6/SRR11038989/PBMC_TB_3_R1.fastq.gz.1"
+                },
+                {
+                    "accession": "SRR11038989",
+                    "filename": "PBMC_TB_3_R2.fastq.gz.1",
+                    "filetype": "fastq",
+                    "filesize": null,
+                    "filenumber": 2,
+                    "md5": null,
+                    "urltype": "aws",
+                    "url": "s3://sra-pub-src-6/SRR11038989/PBMC_TB_3_R2.fastq.gz.1"
+                },
+                {
+                    "accession": "SRR11038989",
+                    "filename": "SRR11038989",
+                    "filetype": "sra",
+                    "filesize": null,
+                    "filenumber": 1,
+                    "md5": null,
+                    "urltype": "aws",
+                    "url": "https://sra-pub-run-odp.s3.amazonaws.com/sra/SRR11038989/SRR11038989"
+                },
+                {
+                    "accession": "SRR11038989",
+                    "filename": "SRR11038989.lite.1",
+                    "filetype": "sra",
+                    "filesize": null,
+                    "filenumber": 1,
+                    "md5": null,
+                    "urltype": "aws",
+                    "url": "s3://sra-pub-zq-3/SRR11038989/SRR11038989.lite.1"
+                }
+            ],
+            "gcp": [
+                {
+                    "accession": "SRR11038989",
+                    "filename": "SRR11038989.lite.1",
+                    "filetype": "sra",
+                    "filesize": null,
+                    "filenumber": 1,
+                    "md5": null,
+                    "urltype": "gcp",
+                    "url": "gs://sra-pub-zq-8/SRR11038989/SRR11038989.lite.1"
+                }
+            ],
+            "ncbi": [
+                {
+                    "accession": "SRR11038989",
+                    "filename": "SRR11038989.lite.1",
+                    "filetype": "sra",
+                    "filesize": null,
+                    "filenumber": 1,
+                    "md5": null,
+                    "urltype": "ncbi",
+                    "url": "https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos5/sra-pub-zq-16/SRR011/11038/SRR11038989/SRR11038989.lite.1"
+                }
+            ]
+        }
+    }
+}
+
+```
+
+2.3 Download the data using aria2c
+
+```{Bash}
+
+# copy the url for the file you want to download , use the url that corresponds with the filename that matches the desired format
+# example "SRR11038989_1.fastq.gz" (fastq.gz)
+
+aria2c "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR110/092/SRR11038992/SRR11038992_1.fastq.gz"
+
+```
+
+Repeat Step 2 for all the datasets from SRR11038989 - SRR11038995 -remember read 1 and read 2 file for each
+
+## Step 3: verify the data using md5sum
+
+3.1 Obtain the md5sum for each file you downloaded (Need to automate this step)
+
+```{Bash}
+
+#still in the cai_datasets directory 
+
+ ffq SRR11038989 
+ 
+#prints out on screen 
+
+ "files": {
+            "ftp": [
+                {
+                    "accession": "SRR11038989",
+                    "filename": "SRR11038989_1.fastq.gz",
+                    "filetype": "fastq",
+                    "filesize": 4815831419,
+                    "filenumber": 1,
+                    "md5": "b6cf6a16a53828c176806976364437bf",
+                    "urltype": "ftp",
+                    "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR110/089/SRR11038989/SRR11038989_1.fastq.gz"
+                },
+                {
+                    "accession": "SRR11038989",
+                    "filename": "SRR11038989_2.fastq.gz",
+                    "filetype": "fastq",
+                    "filesize": 19153232624,
+                    "filenumber": 2,
+                    "md5": "64318dc791ddfbd039356040dac83603",
+                    "urltype": "ftp",
+                    "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR110/089/SRR11038989/SRR11038989_2.fastq.gz"
+                }
+            ],
+
+# copy the "md5" for the file you downloaded  ("SRR11038989_1.fastq.gz")
+
+# creates a file with all the md5sums 
+
+b6cf6a16a53828c176806976364437bf SRR11038989_1.fastq.gz >> checksumsCai.txt 
+
+64318dc791ddfbd039356040dac83603 SRR11038989_2.fastq.gz >> checksumsCai.txt 
+
+
+```
+
+Repeat this step for all files (SRR11038989 - SRR11038995)
+
+3.2 Deactivate micromamba and request an interactive node to compare the md5sums of the files you downloaded to those in the checksumsCai.txt file
+
+```{Bash}
+
+micromamba deactivate 
+
+exit # exit from the dtn node 
+
+ssh tpotgieter@lengau.chpc.ac.za
+
+cd lustre/t_project/cai_datasets
+
+qsub -I -l select=1:ncpus=24:mpiprocs=24 -P CBBI0999 -q serial -l walltime=4:00:00 
+
+md5sum -c checksumsCai.txt
+
+```
+
+## Step 4: create a sample sheet for the data
+
+4.1 Create samplesheet.csv for the dataset using vim
+
+```{Bash}
+
+cd /home/tpotgieter/lustre/t_project/cai_dataset   # move to directory of the datasets in the chpc 
+vim samplesheetCai.csv 
+#in editor type 'i' to insert 
+#create samplesheet and enter 'esc' and type :wq to save and quit
+
+```
+
+## Step 5: run the scrnaseq pipeline using star
+
+5.1 Configure the example.parameters.config file for star
+
+```{Bash}
+
+cd /home/tpotgieter/lustre/t_project/workflow 
+
+
+vim example.parameters.config 
+# press 'i' to edit 
+
+process {
+     executor = 'pbspro'
+     clusterOptions = "-l select=1:ncpus=24:mpiprocs=24 -P CBBI0999 -q serial -l walltime=8:00:00"
+}
+
+// edit these according to your set-up
+
+params {
+   input = '/home/tpotgieter/lustre/t_project/cai_dataset/samplesheetCai.csv'
+   outdir = '/home/tpotgieter/lustre/t_project/workflow/results'
+   aligner = 'star'
+}
+
+// edit these only if necessary
+
+params {
+   protocol = '10XV2' //Very important  check to soo what protocol was used to generate your dataset and change accordingly 
+   genome = 'GRCh38'
+   fasta = '/mnt/lustre/groups/CBBI0999/pipelines/nf/reference_data/genome/genome.fa'
+   gtf = '/mnt/lustre/groups/CBBI0999/pipelines/nf/reference_data/annotation/genes.gtf'
+   star_index = '/mnt/lustre/groups/CBBI0999/pipelines/nf/reference_data/star_index_2.7.10a/' 
+}
+
+ edit queue size if necessary (e.g. decreased CHPC capacity)
+executor {
+    name = 'pbspro'
+    queueSize = 19
+}
+
+
+singularity {
+    enabled = true
+    autoMounts = true
+    cacheDir = "/mnt/lustre/groups/CBBI0999/pipelines/nf/scRNAseq/singularity-images/"
+}
+
+
+```
+
+5.2 Create a custom config file so that the barcode read length doesn't have to match any specific sequence length -avoids the barcode read length error
+
+```{Bash}
+
+cd  /home/tpotgieter/lustre/t_project/workflow 
+
+vim custom.config 
+
+# 'i' 
+
+process { 
+    withName: STAR_ALIGN { 
+            ext.args = "--soloBarcodeReadLength 0" 
+          }
+}
+
+# 'esc' ':wq'
+
+```
+
+5.3 Configure the job script
+
+```{Bash}
+
+vim example.scrnaseq.qsub 
+
+#!/bin/bash
+#PBS -P CBBI0999
+#PBS -l walltime=8:00:00
+#PBS -M tpotgieter@sun.ac.za
+
+module add chpc/BIOMODULES
+module add chpc/nextflow/22.04.1-all
+module add chpc/singularity/3.5.3
+module add chpc/java/17.0.2
+
+cd /home/tpotgieter/lustre/t_project/workflow        #change this to your project directory 
+nextflow -c example.parameters.config,custom.config run main.nf
+
+```
+
+5.4 Run the job script
+
+```{Bash}
+
+cd  /home/tpotgieter/lustre/t_project/workflow  
+
+qsub example.scrnaseq.qsub
+
+```
+
+## Step 6: run the scrnaseq pipeline using alevin
+
+6.1 Run the pipeline again using alevin aligner
+
+```{Bash}
+
+cd /home/tpotgieter/lustre/t_project/workflow 
+
+
+vim example.parameters.config 
+# press 'i' to edit 
+
+process {
+     executor = 'pbspro'
+     clusterOptions = "-l select=1:ncpus=24:mpiprocs=24 -P CBBI0999 -q serial -l walltime=8:00:00"
+}
+
+// edit these according to your set-up
+
+params {
+   input = '/home/tpotgieter/lustre/t_project/cai_dataset/samplesheetCai.csv'
+   outdir = '/home/tpotgieter/lustre/t_project/workflow/results'
+   aligner = 'alevin'
+}
+
+// edit these only if necessary
+
+params {
+   protocol = '10XV2' //Very important  check to soo what protocol was used to generate your dataset and change accordingly 
+   genome = 'GRCh38'
+   fasta = '/mnt/lustre/groups/CBBI0999/pipelines/nf/reference_data/genome/genome.fa'
+   gtf = '/mnt/lustre/groups/CBBI0999/pipelines/nf/reference_data/annotation/genes.gtf'
+   //star_index = '/mnt/lustre/groups/CBBI0999/pipelines/nf/reference_data/star_index_2.7.10a/' 
+}
+
+ edit queue size if necessary (e.g. decreased CHPC capacity)
+executor {
+    name = 'pbspro'
+    queueSize = 19
+}
+
+
+singularity {
+    enabled = true
+    autoMounts = true
+    cacheDir = "/mnt/lustre/groups/CBBI0999/pipelines/nf/scRNAseq/singularity-images/"
+}
+
+
+```
+
+6.2 Edit the job script
+
+```{Bash}
+
+vim example.scrnaseq.qsub 
+
+#!/bin/bash
+#PBS -P CBBI0999
+#PBS -l walltime=8:00:00
+#PBS -M tpotgieter@sun.ac.za
+
+module add chpc/BIOMODULES
+module add chpc/nextflow/22.04.1-all
+module add chpc/singularity/3.5.3
+module add chpc/java/17.0.2
+
+cd /home/tpotgieter/lustre/t_project/workflow        #change this to your project directory 
+nextflow -c example.parameters.config run main.nf
+
+```
+
+6.3 Run the job script
+
+```{Bash}
+
+cd  /home/tpotgieter/lustre/t_project/workflow  
+
+qsub example.scrnaseq.qsub
+
+```
+
+## 
