@@ -1,0 +1,10 @@
+                                            "filename": "SRR23892394_1.fastq.gz",
+                                            "md5": "a8e22944c8acb9c7b4d5c515865415c2",
+                                            "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR238/094/SRR23892394/SRR23892394_1.fastq.gz"
+                                            "filename": "SRR23892394_2.fastq.gz",
+                                            "md5": "147d7990d293e4804efc7af3bd496319",
+                                            "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR238/094/SRR23892394/SRR23892394_2.fastq.gz"
+                                            "filename": "IPF_THD0010_1_LU_Whole_C1_X5SCR_F01692_HNM3GDRXX_CONCAT_L001_R1_001.fastq.gz.1",
+                                            "url": "s3://sra-pub-src-11/SRR23892394/IPF_THD0010_1_LU_Whole_C1_X5SCR_F01692_HNM3GDRXX_CONCAT_L001_R1_001.fastq.gz.1"
+                                            "filename": "IPF_THD0010_1_LU_Whole_C1_X5SCR_F01692_HNM3GDRXX_CONCAT_L001_R2_001.fastq.gz.1",
+                                            "url": "s3://sra-pub-src-11/SRR23892394/IPF_THD0010_1_LU_Whole_C1_X5SCR_F01692_HNM3GDRXX_CONCAT_L001_R2_001.fastq.gz.1"
