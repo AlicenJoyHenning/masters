@@ -66,11 +66,11 @@ E: Package 'ffp' has no installation candidate
 aria2 is a command line tool used to download files from the internet using HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink [more info here](https://aria2.github.io/) 
 
 ### Using parallel execution in bash 
-While using the ```aria2c <url from ffq>``` command to download fastq files worked quickly (_for the mice files_), creating a script to download the files would be ideal instead of having to manually enter the urls each time. A [first attempt]() was made at this that was able to download the files but did so sequentially- ~1 hour to download the first, then ~1 hour for the next and do  on until all are downloaded. My question is : 
+While using the ```aria2c <url from ffq>``` command to download fastq files worked quickly (_for the mice files_), creating a script to download the files would be ideal instead of having to manually enter the urls each time. A [first attempt](https://github.com/AlicenJoyHenning/masters/blob/main/scripts/bash/downloadfastq.sh) was made at this that was able to download the files but did so sequentially- ~1 hour to download the first, then ~1 hour for the next and do  on until all are downloaded. My question is : 
 
-![parallel bash](https://github.com/AlicenJoyHenning/masters/assets/129797527/0cc4814c-b225-4e4f-9ebe-89d1f7b25584)
+![parallel bash](https://github.com/AlicenJoyHenning/masters/assets/129797527/09f364ce-c87e-4eba-a892-dcd3558a4fb5)
 
-
+From there, a second script was made that worked and downloaded all the macaque datasets relatively quickly. 
 
 
 
