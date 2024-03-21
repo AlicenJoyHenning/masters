@@ -1,0 +1,177 @@
+Sample_Accession, Sequencing_Run_Accession, Filename, MD5
+GSM5747736, SRR17311462, "filename": "SRR17311462_1.fastq.gz", "b6c6621e8111bb15e00786891e0dc9dd",
+GSM5747736, SRR17311462, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/062/SRR17311462/SRR17311462_1.fastq.gz"
+GSM5747736, SRR17311462, "filename": "SRR17311462_2.fastq.gz",, "0f3771751f9fda6734bde6ce814ae677",
+GSM5747736, SRR17311462, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/062/SRR17311462/SRR17311462_2.fastq.gz"
+GSM5747736, SRR17311464, "filename": "SRR17311464_1.fastq.gz", "bb6c4885ea7a8ab2843a90444739ed43",
+GSM5747736, SRR17311464, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/064/SRR17311464/SRR17311464_1.fastq.gz"
+GSM5747736, SRR17311464, "filename": "SRR17311464_2.fastq.gz", "f9ce03cec2aec22f7e6eff7995ac865d",
+GSM5747736, SRR17311464, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/064/SRR17311464/SRR17311464_2.fastq.gz"
+GSM5747736, SRR17311460, "filename": "SRR17311460_1.fastq.gz", "d2555aef05d2d11230227660ae17207b",
+GSM5747736, SRR17311460, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/060/SRR17311460/SRR17311460_1.fastq.gz"
+GSM5747736, SRR17311460, "filename": "SRR17311460_2.fastq.gz", "c1dcb90c799957409af7185b747ae411",
+GSM5747736, SRR17311460, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/060/SRR17311460/SRR17311460_2.fastq.gz"
+GSM5747736, SRR17311459, "filename": "SRR17311459_1.fastq.gz", "52e92c31fd2a218f387f985abba97559",
+GSM5747736, SRR17311459, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/059/SRR17311459/SRR17311459_1.fastq.gz"
+GSM5747736, SRR17311459, "filename": "SRR17311459_2.fastq.gz", "f173db63dabeb22c580763a8236827cd",
+GSM5747736, SRR17311459, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/059/SRR17311459/SRR17311459_2.fastq.gz"
+GSM5747736, SRR17311463, "filename": "SRR17311463_1.fastq.gz", "4f0f0981cd2192dc4dce3407ed0438ee",
+GSM5747736, SRR17311463, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/063/SRR17311463/SRR17311463_1.fastq.gz"
+GSM5747736, SRR17311463, "filename": "SRR17311463_2.fastq.gz", "48be2e990c8c1f445e102dddd9835c40",
+GSM5747736, SRR17311463, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/063/SRR17311463/SRR17311463_2.fastq.gz"
+GSM5747736, SRR17311465, "filename": "SRR17311465_1.fastq.gz", "bda360741b972b5c6f7a6ce74e1912a8",
+GSM5747736, SRR17311465, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/065/SRR17311465/SRR17311465_1.fastq.gz"
+GSM5747736, SRR17311465, "filename": "SRR17311465_2.fastq.gz", "e04b06ecd771366a8d8ab001572bef1e",
+GSM5747736, SRR17311465, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/065/SRR17311465/SRR17311465_2.fastq.gz"
+GSM5747736, SRR17311468, "filename": "SRR17311468_1.fastq.gz", "09ce87279b881e61d76c120e6fa3a91b",
+GSM5747736, SRR17311468, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/068/SRR17311468/SRR17311468_1.fastq.gz"
+GSM5747736, SRR17311468, "filename": "SRR17311468_2.fastq.gz", "8d478af07b033407d7254cc6966dd80c",
+GSM5747736, SRR17311468, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/068/SRR17311468/SRR17311468_2.fastq.gz"
+GSM5747736, SRR17311469, "filename": "SRR17311469_1.fastq.gz", "b99df64b982dee363e6d0b4fbd70f39d",
+GSM5747736, SRR17311469, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/069/SRR17311469/SRR17311469_1.fastq.gz"
+GSM5747736, SRR17311469, "filename": "SRR17311469_2.fastq.gz", "debc4a846526f8bbca5092763852c132",
+GSM5747736, SRR17311469, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/069/SRR17311469/SRR17311469_2.fastq.gz"
+GSM5747736, SRR17311467, "filename": "SRR17311467_1.fastq.gz", "101f8e0a627bd09e731a10baa303cb6c",
+GSM5747736, SRR17311467, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/067/SRR17311467/SRR17311467_1.fastq.gz"
+GSM5747736, SRR17311467, "filename": "SRR17311467_2.fastq.gz", "65eb2dd34980acf355db1958ebd933db",
+GSM5747736, SRR17311467, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/067/SRR17311467/SRR17311467_2.fastq.gz"
+GSM5747736, SRR17311470, "filename": "SRR17311470_1.fastq.gz", "bda4f0fac2f178e02c30f9b9c7e60ae5",
+GSM5747736, SRR17311470, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/070/SRR17311470/SRR17311470_1.fastq.gz"
+GSM5747736, SRR17311470, "filename": "SRR17311470_2.fastq.gz", "ca44993b150d548bc09ade98bee04591",
+GSM5747736, SRR17311470, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/070/SRR17311470/SRR17311470_2.fastq.gz"
+GSM5747736, SRR17311461, "filename": "SRR17311461_1.fastq.gz", "8d3242bf98ce0b12c0727dee05a38527",
+GSM5747736, SRR17311461, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/061/SRR17311461/SRR17311461_1.fastq.gz"
+GSM5747736, SRR17311461, "filename": "SRR17311461_2.fastq.gz", "4c4b257c3eae2195617195d1852b26bc",
+GSM5747736, SRR17311461, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/061/SRR17311461/SRR17311461_2.fastq.gz"
+GSM5747736, SRR17311466, "filename": "SRR17311466_1.fastq.gz", "f73b8364326ffaad4d1b41a4f3bcbd88",
+GSM5747736, SRR17311466, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/066/SRR17311466/SRR17311466_1.fastq.gz"
+GSM5747736, SRR17311466, "filename": "SRR17311466_2.fastq.gz", "a3d41a9fe0656a653f1777128de97a9a",
+GSM5747736, SRR17311466, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/066/SRR17311466/SRR17311466_2.fastq.gz"
+GSM5747737, SRR17311471, "filename": "SRR17311471_1.fastq.gz","d63c05b291403dc81dfa563b8bd78b08",
+GSM5747737, SRR17311471, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/071/SRR17311471/SRR17311471_1.fastq.gz"
+GSM5747737, SRR17311471, "filename": "SRR17311471_2.fastq.gz", "7af78408dc4822cbe2c72d43b8340276",
+GSM5747737, SRR17311471, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/071/SRR17311471/SRR17311471_2.fastq.gz"
+GSM5747737, SRR17311474, "filename": "SRR17311474_1.fastq.gz", "c94596e00186715ebc4dcb0681223262",
+GSM5747737, SRR17311474, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/074/SRR17311474/SRR17311474_1.fastq.gz"
+GSM5747737, SRR17311474, "filename": "SRR17311474_2.fastq.gz", "c2f1d6a1fc2870930d0e5960af8e1e4b",
+GSM5747737, SRR17311474, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/074/SRR17311474/SRR17311474_2.fastq.gz"
+GSM5747737, SRR17311472, "filename": "SRR17311472_1.fastq.gz", "b20f1177dc862e0a024665deadf5dc95",
+GSM5747737, SRR17311472, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/072/SRR17311472/SRR17311472_1.fastq.gz"
+GSM5747737, SRR17311472, "filename": "SRR17311472_2.fastq.gz", "442afeb581ec1b0799efce2a690072ef",
+GSM5747737, SRR17311472, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/072/SRR17311472/SRR17311472_2.fastq.gz"
+GSM5747737, SRR17311473, "filename": "SRR17311473_1.fastq.gz", "f29785f873a705559ee510f7aab4ee01",
+GSM5747737, SRR17311473, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/073/SRR17311473/SRR17311473_1.fastq.gz"
+GSM5747737, SRR17311473, "filename": "SRR17311473_2.fastq.gz", "a1dd4236f92f864cef9c959458940930",
+GSM5747737, SRR17311473, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/073/SRR17311473/SRR17311473_2.fastq.gz"
+GSM5747738, SRR17311475, "filename": "SRR17311475_1.fastq.gz", "dd3a141c2e9ea1c5eec0041fd69d1c74",
+GSM5747738, SRR17311475, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/075/SRR17311475/SRR17311475_1.fastq.gz"
+GSM5747738, SRR17311475, "filename": "SRR17311475_2.fastq.gz", "a994f426a2ede950487c636ecbd3651b",
+GSM5747738, SRR17311475, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/075/SRR17311475/SRR17311475_2.fastq.gz"
+GSM5747738, SRR17311476, "filename": "SRR17311476_1.fastq.gz", "312f282613297bf28cb5770d3122444f",
+GSM5747738, SRR17311476, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/076/SRR17311476/SRR17311476_1.fastq.gz"
+GSM5747738, SRR17311476, "filename": "SRR17311476_2.fastq.gz", "b570c15e30a61401b0ea4cd9407716ad",
+GSM5747738, SRR17311476, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/076/SRR17311476/SRR17311476_2.fastq.gz"
+GSM5747738, SRR17311478, "filename": "SRR17311478_1.fastq.gz", "014e50405a318dcfb8b35d6c218984fe",
+GSM5747738, SRR17311478, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/078/SRR17311478/SRR17311478_1.fastq.gz"
+GSM5747738, SRR17311478, "filename": "SRR17311478_2.fastq.gz", "1100984111f2220e5c9955fa86dc5bd6",
+GSM5747738, SRR17311478, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/078/SRR17311478/SRR17311478_2.fastq.gz"
+GSM5747738, SRR17311477, "filename": "SRR17311477_1.fastq.gz", "bc820caf20fcc807f2cf01835e599a0e",
+GSM5747738, SRR17311477, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/077/SRR17311477/SRR17311477_1.fastq.gz"
+GSM5747738, SRR17311477, "filename": "SRR17311477_2.fastq.gz", "d588b0a0efcd475510d6f1ad6220d556",
+GSM5747738, SRR17311477, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/077/SRR17311477/SRR17311477_2.fastq.gz"
+GSM5747741, SRR17311512, "filename": "SRR17311512_1.fastq.gz", "da3acd39e0939aa581d7f0e9b5187ce8",
+GSM5747741, SRR17311512, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/012/SRR17311512/SRR17311512_1.fastq.gz"
+GSM5747741, SRR17311512, "filename": "SRR17311512_2.fastq.gz", "42dde8ab604a16ae76439bad2352317e",
+GSM5747741, SRR17311512, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/012/SRR17311512/SRR17311512_2.fastq.gz"
+GSM5747741, SRR17311515, "filename": "SRR17311515_1.fastq.gz", "5c118dd72c2b37b6debb23a7fe06e089",
+GSM5747741, SRR17311515, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/015/SRR17311515/SRR17311515_1.fastq.gz"
+GSM5747741, SRR17311515, "filename": "SRR17311515_2.fastq.gz", "d436e80376761c9cfe270e4370476935",
+GSM5747741, SRR17311515, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/015/SRR17311515/SRR17311515_2.fastq.gz"
+GSM5747741, SRR17311516, "filename": "SRR17311516_1.fastq.gz", "ce30f8b84b52bb809010795abe395940",
+GSM5747741, SRR17311516, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/016/SRR17311516/SRR17311516_1.fastq.gz"
+GSM5747741, SRR17311516, "filename": "SRR17311516_2.fastq.gz", "0d7e47092ee6a84ce670b5d660c7490c",
+GSM5747741, SRR17311516, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/016/SRR17311516/SRR17311516_2.fastq.gz"
+GSM5747741, SRR17311507, "filename": "SRR17311507_1.fastq.gz", "6d3b2c988ccf1d00833cbda561992b46",
+GSM5747741, SRR17311507, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/007/SRR17311507/SRR17311507_1.fastq.gz"
+GSM5747741, SRR17311507, "filename": "SRR17311507_2.fastq.gz", "7f803ed768ebf3ee163b58a0e0c6a30c",
+GSM5747741, SRR17311507, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/007/SRR17311507/SRR17311507_2.fastq.gz"
+GSM5747741, SRR17311514, "filename": "SRR17311514_1.fastq.gz", "007b63bb39d7f9459171bb6747c16cb8",
+GSM5747741, SRR17311514, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/014/SRR17311514/SRR17311514_1.fastq.gz"
+GSM5747741, SRR17311514, "filename": "SRR17311514_2.fastq.gz", "014d0ed8d62009c06fe6ca25dfd0801a",
+GSM5747741, SRR17311514, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/014/SRR17311514/SRR17311514_2.fastq.gz"
+GSM5747741, SRR17311517, "filename": "SRR17311517_1.fastq.gz", "7040901fde8485021b467a0011a0a3af",
+GSM5747741, SRR17311517, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/017/SRR17311517/SRR17311517_1.fastq.gz"
+GSM5747741, SRR17311517, "filename": "SRR17311517_2.fastq.gz", "20b06c67bbd9449547e13532a6e953b2",
+GSM5747741, SRR17311517, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/017/SRR17311517/SRR17311517_2.fastq.gz"
+GSM5747741, SRR17311509, "filename": "SRR17311509_1.fastq.gz", "aae2193ea6a8e32155cd9bab991dcbb9",
+GSM5747741, SRR17311509, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/009/SRR17311509/SRR17311509_1.fastq.gz"
+GSM5747741, SRR17311509, "filename": "SRR17311509_2.fastq.gz", "1e25e4f063bac3aa0d8d2aa326f963d3",
+GSM5747741, SRR17311509, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/009/SRR17311509/SRR17311509_2.fastq.gz"
+GSM5747741, SRR17311508, "filename": "SRR17311508_1.fastq.gz", "c73197847c9d13f8c80af8f5377a3e89",
+GSM5747741, SRR17311508, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/008/SRR17311508/SRR17311508_1.fastq.gz"
+GSM5747741, SRR17311508, "filename": "SRR17311508_2.fastq.gz", "886c9c858d1e9f3c611deac65f519b6e",
+GSM5747741, SRR17311508, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/008/SRR17311508/SRR17311508_2.fastq.gz"
+GSM5747741, SRR17311510, "filename": "SRR17311510_1.fastq.gz", "5a43abc0200f26a56ac6b2dc0cbfabae",
+GSM5747741, SRR17311510, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/010/SRR17311510/SRR17311510_1.fastq.gz"
+GSM5747741, SRR17311510, "filename": "SRR17311510_2.fastq.gz", "bce2bbef0f43d66db163306bc8c9d4d0",
+GSM5747741, SRR17311510, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/010/SRR17311510/SRR17311510_2.fastq.gz"
+GSM5747741, SRR17311518, "filename": "SRR17311518_1.fastq.gz", "33f51fa768706d742e719e52868c847c",
+GSM5747741, SRR17311518, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/018/SRR17311518/SRR17311518_1.fastq.gz"
+GSM5747741, SRR17311518, "filename": "SRR17311518_2.fastq.gz", "3897fe9d27b184955a1686fcb8ca2b51",
+GSM5747741, SRR17311518, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/018/SRR17311518/SRR17311518_2.fastq.gz"
+GSM5747741, SRR17311513, "filename": "SRR17311513_1.fastq.gz", "0ad88474bf0c17da6c7a80c48b0cb237",
+GSM5747741, SRR17311513, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/013/SRR17311513/SRR17311513_1.fastq.gz"
+GSM5747741, SRR17311513, "filename": "SRR17311513_2.fastq.gz", "834ad5ec60a4e44c8731b70307ff0691",
+GSM5747741, SRR17311513, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/013/SRR17311513/SRR17311513_2.fastq.gz"
+GSM5747741, SRR17311511, "filename": "SRR17311511_1.fastq.gz", "b94e911e2b968e9d1f4c3ebb784879e1",
+GSM5747741, SRR17311511, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/011/SRR17311511/SRR17311511_1.fastq.gz"
+GSM5747741, SRR17311511, "filename": "SRR17311511_2.fastq.gz", "c1db4d8fd32a5cbfe9b5350525bc9227",
+GSM5747741, SRR17311511, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/011/SRR17311511/SRR17311511_2.fastq.gz"
+GSM5747742, SRR17311521, "filename": "SRR17311521_1.fastq.gz", "38805d1d716efde693355fe58cc10466",
+GSM5747742, SRR17311521, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/021/SRR17311521/SRR17311521_1.fastq.gz"
+GSM5747742, SRR17311521, "filename": "SRR17311521_2.fastq.gz", "ff08abd6adac9fc13047c9bafa2a38fb",
+GSM5747742, SRR17311521, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/021/SRR17311521/SRR17311521_2.fastq.gz"
+GSM5747742, SRR17311522, "filename": "SRR17311522_1.fastq.gz", "02493bf708b5e99b1ff2ceb6e9f61182",
+GSM5747742, SRR17311522, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/022/SRR17311522/SRR17311522_1.fastq.gz"
+GSM5747742, SRR17311522, "filename": "SRR17311522_2.fastq.gz", "61ab54f992b027498fc8df350045a10f",
+GSM5747742, SRR17311522, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/022/SRR17311522/SRR17311522_2.fastq.gz"
+GSM5747742, SRR17311519, "filename": "SRR17311519_1.fastq.gz",, "bd6781cba8bf668e90aaf0d80f11fbaf",
+GSM5747742, SRR17311519, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/019/SRR17311519/SRR17311519_1.fastq.gz"
+GSM5747742, SRR17311519, "filename": "SRR17311519_2.fastq.gz", "1a35183fe90cb988819e60cfebacbc32",
+GSM5747742, SRR17311519, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/019/SRR17311519/SRR17311519_2.fastq.gz"
+GSM5747742, SRR17311520, "filename": "SRR17311520_1.fastq.gz", "33065249eac663631e1af23f071b5596",
+GSM5747742, SRR17311520, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/020/SRR17311520/SRR17311520_1.fastq.gz"
+GSM5747742, SRR17311520, "filename": "SRR17311520_2.fastq.gz", "26e042a5091de39ea8f769b854697c1f",
+GSM5747742, SRR17311520, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR173/020/SRR17311520/SRR17311520_2.fastq.gz"
+GSM5747743, SRR21771720, "filename": "SRR21771720_1.fastq.gz", "c5b5a30c30c1f147c0703fbf9f312005",
+GSM5747743, SRR21771720, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/020/SRR21771720/SRR21771720_1.fastq.gz"
+GSM5747743, SRR21771720, "filename": "SRR21771720_2.fastq.gz", "dd24b427fdd92d31bd76973f77f704c4",
+GSM5747743, SRR21771720, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/020/SRR21771720/SRR21771720_2.fastq.gz"
+GSM5747743, SRR21771719, "filename": "SRR21771719_1.fastq.gz", "dc39ca2ff61fbd0134df6fec34c03975",
+GSM5747743, SRR21771719, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/019/SRR21771719/SRR21771719_1.fastq.gz"
+GSM5747743, SRR21771719, "filename": "SRR21771719_2.fastq.gz", "94b8fdd5652aa2a4b6278dc8c385596e",
+GSM5747743, SRR21771719, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/019/SRR21771719/SRR21771719_2.fastq.gz"
+GSM5747743, SRR21771722, "filename": "SRR21771722_1.fastq.gz", "83952a3cf4b99d8d1d274dd0f6280442",
+GSM5747743, SRR21771722, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/022/SRR21771722/SRR21771722_1.fastq.gz"
+GSM5747743, SRR21771722, "filename": "SRR21771722_2.fastq.gz", "60db93b4e7fe29bedaf9bf32992446ec",
+GSM5747743, SRR21771722, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/022/SRR21771722/SRR21771722_2.fastq.gz"
+GSM5747743, SRR21771721, "filename": "SRR21771721_1.fastq.gz", "2e598d2a7a188718d271b03c489adfc2",
+GSM5747743, SRR21771721, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/021/SRR21771721/SRR21771721_1.fastq.gz"
+GSM5747743, SRR21771721, "filename": "SRR21771721_2.fastq.gz", "c3680deca3ca22526df835aa95d4d993",
+GSM5747743, SRR21771721, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/021/SRR21771721/SRR21771721_2.fastq.gz"
+GSM5747744, SRR21771725, "filename": "SRR21771725_1.fastq.gz", "cbb862c16c9761184544caf980c1948e",
+GSM5747744, SRR21771725, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/025/SRR21771725/SRR21771725_1.fastq.gz"
+GSM5747744, SRR21771725, "filename": "SRR21771725_2.fastq.gz", "f3f4aa7e46c1d2e7dfa2631fcb0ec69a",
+GSM5747744, SRR21771725, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/025/SRR21771725/SRR21771725_2.fastq.gz"
+GSM5747744, SRR21771723, "filename": "SRR21771723_1.fastq.gz", "672927d9f45acad2a1030938eca2b067",
+GSM5747744, SRR21771723, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/023/SRR21771723/SRR21771723_1.fastq.gz"
+GSM5747744, SRR21771723, "filename": "SRR21771723_2.fastq.gz", "4cf9dc8c4e928d61dd261d927651d14d",
+GSM5747744, SRR21771723, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/023/SRR21771723/SRR21771723_2.fastq.gz"
+GSM5747744, SRR21771724, "filename": "SRR21771724_1.fastq.gz", "d3a2143ae1cc2ed5da19ecd994832803",
+GSM5747744, SRR21771724, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/024/SRR21771724/SRR21771724_1.fastq.gz"
+GSM5747744, SRR21771724, "filename": "SRR21771724_2.fastq.gz", "d948342d8fb03c33bc7443a3fe260a51",
+GSM5747744, SRR21771724, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/024/SRR21771724/SRR21771724_2.fastq.gz"
+GSM5747744, SRR21771726, "filename": "SRR21771726_1.fastq.gz", "1f23a422e5714b33c033ffa4866cc85d",
+GSM5747744, SRR21771726, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/026/SRR21771726/SRR21771726_1.fastq.gz"
+GSM5747744, SRR21771726, "filename": "SRR21771726_2.fastq.gz", "9ae99b55817f71e211c4339941670171",
+GSM5747744, SRR21771726, "url": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR217/026/SRR21771726/SRR21771726_2.fastq.gz"
